@@ -1,0 +1,382 @@
+@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Lato:wght@300;700;900&family=Padauk:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2c2c2c;
+    height: 100%;
+    width: 100%;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    z-index: 100;
+}
+
+.header a {
+    color: #fff;
+}
+
+.header .logo {
+    font-family: 'Agdasima';
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 700;
+    animation: SlideTop .5s ease forwards;
+    opacity: 0;
+    filter: blur(5px);
+
+}
+
+
+
+
+.header .menu {
+    color: #fff;
+    font-size: 30px;
+    display: none;
+
+}
+
+
+
+.navbar a {
+    font-size: 20px;
+    font-family: 'Lato';
+    display: inline-block;
+    margin-left: 45px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    animation: SlideTop .5s ease forwards;
+    opacity: 0;
+    filter: blur(5px);
+}
+
+@keyframes SlideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 1;
+        filter: blur(2px);
+    }
+
+    100% {
+        transform: translateY(00%);
+        opacity: 1;
+        filter: blur(0px);
+
+    }
+}
+
+.navbar a:hover {
+    color: #ffab0f;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    padding: 10rem 9% 2rem;
+}
+
+.text-section {
+    color: #fff;
+    max-width: 700px;
+    font-family: 'Lato';
+
+}
+
+.text-section h2,
+h3,
+.btn-box {
+    animation: SlideTop 1s ease forwards;
+    animation-delay: .1s;
+
+}
+
+.text-section h2 {
+    font-family: 'Agdasima';
+    font-size: 50px;
+    /* animation: SlideTop 1s ease forwards; */
+    opacity: 0;
+    filter: blur(5px);
+
+}
+
+.text-section p {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.text-section h3 {
+    font-size: 30px;
+    color: #ffab0f;
+    /* animation: SlideTop .1s ease forwards; */
+    opacity: 0;
+    filter: blur(5px);
+
+
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    opacity: 0;
+    filter: blur(5px);
+
+
+}
+
+.btn-box a {
+    display: flex;
+    color: #2c2c2c;
+    background: #ffab0f;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    margin-top: 20px;
+    border: 2px solid #ffab0f;
+    transition: .3s;
+
+
+
+}
+
+.btn-box a:hover {
+    color: #ffab0f;
+    background: #2c2c2c;
+
+}
+
+.social-media {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    /* background: #b1f103; */
+    display: grid;
+    font-size: 26px;
+    animation: SlideRight .5s ease-in-out 1s forwards;
+    animation-delay: .1s;
+}
+
+@keyframes SlideRight {
+    0% {
+        transform: translateX(-70px);
+
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.social-media a {
+    color: #2c2c2c;
+
+}
+
+.social-media i {
+    padding: 10px 10px;
+    background: #ffab0f;
+    border: 2px solid #ffab0f;
+    margin-top: 10px;
+
+    border-radius: 50%;
+    transition: .3s;
+
+}
+
+.social-media i:hover {
+    background: #2c2c2c;
+    color: #ffab0f;
+}
+
+.img-section {
+    display: flex;
+
+
+}
+
+.img-section img {
+    width: 400px;
+    background: rgb(141, 197, 212);
+    background: linear-gradient(20deg, rgba(141, 197, 212, 1) 5%, rgba(123, 241, 178, 0.7763480392156863) 30%, rgba(196, 219, 230, 0) 90%);
+
+    border-radius: 50%;
+
+    animation: SlideLeft 1s ease forwards, Float 3s ease-in-out infinite;
+    animation-delay: .5s, 1s;
+    opacity: 1;
+
+}
+
+
+@keyframes SlideLeft {
+    0% {
+        transform: translateX(500px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-150px);
+    }
+}
+
+@keyframes Float {
+    0% {
+        transform: translateY(0);
+
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:768px) {
+    section {
+        padding: 10rem 2% 0;
+    }
+
+    .home {
+        display: block;
+    }
+
+
+
+    .logo {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+
+
+    .navbar {
+
+        position: fixed;
+        width: 100%;
+        right: 0;
+        top: 0%;
+        background: #2c2c2c;
+        padding: 10px;
+        
+        border-top: 1px solid #2c2c2c;
+        box-shadow: 0 .8px 16px #2c2c2c;
+        
+        text-align: center;
+
+    }
+    .center-align a{
+        display:inline-block;
+        margin:20px 15px;
+        font-size: 25px;
+        font-weight: 600;
+        color:#ffab0f;
+
+    }
+    .center-align a:hover{
+        color:white;
+        
+    }
+
+
+    .text-section {
+        display: grid;
+        width: 100%;
+        text-align: center;
+
+    }
+
+
+    .btn-box {
+        display: block;
+        margin: 20px auto;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .btn-box a {
+        margin: 0;
+    }
+
+    .social-media {
+        position: unset;
+
+        display: block;
+        margin-bottom: 20px;
+        animation: Zoom 1s .2s forwards;
+
+    }
+
+    .social-media a {
+        margin-left: 10px;
+
+    }
+
+    @keyframes Zoom {
+        0% {
+            transform: scale(0);
+        }
+
+        50% {
+            transform: scale(30px);
+        }
+
+        100% {
+            transform: scale(60px);
+        }
+    }
+
+    .img-section img {
+        display: block;
+        width: 300px;
+        margin: 20px auto;
+        animation: FloatUp .5s ease-in-out forwards;
+        animation-delay: .01s;
+    }
+
+    @keyframes FloatUp {
+        0% {
+            transform: translateY(450px);
+        }
+
+        100% {
+            transform: translateY(00%);
+        }
+    }
+}
