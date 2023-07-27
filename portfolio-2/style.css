@@ -624,6 +624,7 @@ a {
 
     .wrap div span i {
         margin-top: 10px;
+        margin-bottom: 0px;
         font-size: 40px;
     }
 
