@@ -619,6 +619,7 @@ a {
     .wrap div span {
         font-size: var(--p-font-size);
         margin: 10px auto;
+        margin-bottom: 0px;
     }
 
     .wrap div span i {
