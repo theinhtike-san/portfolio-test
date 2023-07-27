@@ -5,32 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Test</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    
+
     <section class="header">
         <a href="#" class="logo">Thein Htike San</a>
         <nav class="navbar">
             <div class="menu"><a href="#"><i class="fa-solid fa-bars "></i></a>
             </div>
             <div class="text-menu">
-                <a href="#ho" style="--clr:1">Home</a>
-                <a href="#" style="--clr:2">Hire</a>
-                <a href="#" style="--clr:3">Services</a>
-                <a href="#" style="--clr:4">Portfolio</a>
-                <a href="#" style="--clr:5">Contact us</a>
+                <a href="#home">Home</a>
+                <a href="#skillsection">Skills</a>
+                <a href="#project">Project</a>
+                <a href="#contact">Contact</a>
             </div>
 
             <div class="icon-menu">
                 <a href="#home" title="Home"><i class="fa-solid fa-house"></i></a>
-                <a href="#" title="Service"><i class="fa-solid fa-briefcase"></i></a>
-                <a href="#" title="Portfolio"><i class="fa-solid fa-user"></i></a>
-                <a href="#" title="Contact us"><i class="fa-solid fa-phone  "></i></a>
+                <a href="#skillsection" title="Skill"><i class="fa-solid fa-code-compare"></i></a>
+                <a href="#project" title="Project"><i class="fa-solid fa-code"></i></a>
+                <a href="#contact" title="Contact us"><i class="fa-solid fa-phone  "></i></a>
             </div>
 
         </nav>
@@ -50,7 +49,7 @@
                 <a href="https://www.linkedin.com/in/thein-htike-san-988b4626b/"><i
                         class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/theinhtike-san"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:theinhtikesan@gmail.com"><i class="fa-solid fa-envelope"></i></i></a>
+                <a href="mailto:theinhtikesam@gmail.com"><i class="fa-solid fa-envelope"></i></i></a>
             </div>
         </div>
 
@@ -59,49 +58,115 @@
 
         </div>
     </section>
-    
-    <section class="skill">
+
+    <section class="skill" id="skillsection">
+        <div class="skill-title">Skills</div>
         <div class="wrap">
+
             <div class="html">
                 <span><i class="fa-brands fa-html5"></i></span>
                 <span>HTML5</span>
+                <progress id="percent" value="95" max="100"></progress>
+                <label for="percent"></label>
 
             </div>
             <div class="css">
                 <span><i class="fa-brands fa-css3"></i></span>
                 <span>CSS3</span>
+
+                <progress id="percent" value="90" max="100"></progress>
+                <label for="percent"></label>
+
             </div>
             <div class="js">
                 <span><i class="fa-brands fa-js"></i></i></span>
                 <span>Javascript</span>
+
+                <progress id="percent" value="80" max="100"></progress>
+                <label for="percent"></label>
+
             </div>
             <div class="bootstrap">
                 <span><i class="fa-brands fa-bootstrap"></i></span>
                 <span>Bootstrap</span>
+
+                <progress id="percent" value="50" max="100"></progress>
+                <label for="percent"></label>
+
             </div>
             <div class="tailwind">
-                <span><svg height="154" preserveAspectRatio="xMidYMid" viewBox="0 0 256 154" width="256" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" x1="-2.777778%" x2="100%" y1="32%" y2="67.555556%"><stop offset="0" stop-color="#2298bd"/><stop offset="1" stop-color="#0ed7b5"/></linearGradient><path d="m128 0c-34.1333333 0-55.4666667 17.0666667-64 51.2 12.8-17.0666667 27.7333333-23.4666667 44.8-19.2 9.737481 2.4343704 16.697363 9.4985481 24.401067 17.3184 12.549689 12.7383704 27.07437 27.4816 58.798933 27.4816 34.133333 0 55.466667-17.0666667 64-51.2-12.8 17.0666667-27.733333 23.4666667-44.8 19.2-9.737481-2.4343704-16.697363-9.4985481-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816zm-64 76.8c-34.1333333 0-55.46666667 17.0666667-64 51.2 12.8-17.066667 27.7333333-23.466667 44.8-19.2 9.7374815 2.43437 16.697363 9.498548 24.4010667 17.3184 12.5496889 12.73837 27.0743703 27.4816 58.7989333 27.4816 34.133333 0 55.466667-17.066667 64-51.2-12.8 17.066667-27.733333 23.466667-44.8 19.2-9.737481-2.43437-16.697363-9.498548-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816z" fill="url(#a)"/></svg>
-                    </span>
-                    <span>Tailwind</span>
+                <span class="svg"><svg height="" preserveAspectRatio="xMidYMid" viewBox="0 0 256 154" width="256"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <linearGradient id="a" x1="-2.777778%" x2="100%" y1="32%" y2="67.555556%">
+                            <stop offset="0" stop-color="#2298bd" />
+                            <stop offset="1" stop-color="#0ed7b5" />
+                        </linearGradient>
+                        <path
+                            d="m128 0c-34.1333333 0-55.4666667 17.0666667-64 51.2 12.8-17.0666667 27.7333333-23.4666667 44.8-19.2 9.737481 2.4343704 16.697363 9.4985481 24.401067 17.3184 12.549689 12.7383704 27.07437 27.4816 58.798933 27.4816 34.133333 0 55.466667-17.0666667 64-51.2-12.8 17.0666667-27.733333 23.4666667-44.8 19.2-9.737481-2.4343704-16.697363-9.4985481-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816zm-64 76.8c-34.1333333 0-55.46666667 17.0666667-64 51.2 12.8-17.066667 27.7333333-23.466667 44.8-19.2 9.7374815 2.43437 16.697363 9.498548 24.4010667 17.3184 12.5496889 12.73837 27.0743703 27.4816 58.7989333 27.4816 34.133333 0 55.466667-17.066667 64-51.2-12.8 17.066667-27.733333 23.466667-44.8 19.2-9.737481-2.43437-16.697363-9.498548-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816z"
+                            fill="url(#a)" />
+                    </svg>
+                </span>
+                <span>Tailwind</span>
+
+                <progress id="percent" value="60" max="100"></progress>
+                <label for="percent"></label>
+
             </div>
             <div class="php">
                 <span><i class="fa-brands fa-php"></i></span>
                 <span>PHP</span>
-    
+
+                <progress id="percent" value="85" max="100"></progress>
+                <label for="percent"></label>
+
             </div>
             <div class="sql">
                 <span><i class="fa-solid fa-database"></i></span>
                 <span>SQL</span>
+                <progress id="percent" value="80" max="100"></progress>
+                <label for="percent"></label>
+
             </div>
             <div class="laravel">
                 <span><i class="fa-brands fa-laravel"></i></span>
                 <span>Laravel</span>
-                <span>level</span>
-                <span>level</span>
-    
+
+                <progress id="percent" value="70" max="100"></progress>
+                <label for="percent"></label>
+
+
+
+
             </div>
         </div>
     </section>
+
+
+    <section class="contact" id="contact">
+        <div class="contact-list">
+            <span class="contact-title">To Contact</span>
+            <ul class="">
+                <li><a href="tel:09979556779"><i class="fa-solid fa-fw fa-phone"></i>09 979556779</a></li>
+                <li><a href="mailto:theinhtikesansswn963@gmail.com"><i
+                            class="fa-solid fa-fw fa-envelope"></i>theinhtikesansswn963@gmail.com</a></li>
+                <li><a href="https://www.facebook.com/thein.h.san.0"><i class="fa-brands fa-fw fa-facebook"></i>Thein
+                        Htike San</a></li>
+                <li><a
+                        href="https://www.google.com/maps/place/%E1%80%95%E1%80%BB%E1%80%B1%E1%80%AC%E1%80%BA%E1%80%98%E1%80%BD%E1%80%9A%E1%80%BA,+%E1%80%99%E1%80%BC%E1%80%94%E1%80%BA%E1%80%99%E1%80%AC/@20.5966708,96.029949,14z/data=!3m1!4b1!4m6!3m5!1s0x30c9154c6f40a3f7:0xabaf42aee660a25a!8m2!3d20.5977218!4d96.0493896!16s%2Fm%2F03h4w7z?entry=ttu"><i
+                            class="fa-solid fa-fw fa-house"></i>Pyawbwe, Mandalay Region</a></li>
+            </ul>
+        </div>
+
+    </section>
+    <footer>
+
+        <div class="footer">
+
+            <span>Copy Right &copy; 2023 Thein Htike San, All Rights Reserved.</span>
+
+    </footer>
+
+
 </body>
 
 </html>
