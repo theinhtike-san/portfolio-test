@@ -20,7 +20,6 @@
     --primary-color: #ffab0f;
     --secondary-color: #352d20;
 
-
 }
 
 html,
@@ -28,7 +27,6 @@ body {
     background-color: var(--secondary-color);
     height: 100%;
     width: 100%;
-
 }
 
 
@@ -64,7 +62,6 @@ body {
     animation: SlideTop .5s ease forwards;
     opacity: 0;
     filter: blur(5px);
-
 }
 
 
@@ -106,7 +103,6 @@ body {
         transform: translateY(00%);
         opacity: 1;
         filter: blur(0px);
-
     }
 }
 
@@ -119,7 +115,6 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-
 }
 
 
@@ -129,9 +124,7 @@ section {
 
 .text-section {
     color: #fff;
-    max-width: 700px;
     font-family: 'Lato';
-
 }
 
 .text-section h2,
@@ -139,7 +132,6 @@ h3,
 .btn-box {
     animation: SlideTop 1s ease forwards;
     animation-delay: .1s;
-
 }
 
 .text-section h2 {
@@ -149,7 +141,6 @@ h3,
     opacity: 0;
     filter: blur(5px);
     margin-bottom: 20px;
-
 }
 
 .text-section p {
@@ -164,8 +155,6 @@ h3,
     opacity: 0;
     filter: blur(5px);
     margin-bottom: 20px;
-
-
 }
 
 .btn-box {
@@ -176,8 +165,6 @@ h3,
     width: 150px;
     opacity: 0;
     filter: blur(5px);
-
-
 }
 
 .btn-box a {
@@ -196,15 +183,11 @@ h3,
     margin-top: 20px;
     border: 2px solid #ffab0f;
     transition: .3s;
-
-
-
 }
 
 .btn-box a:hover {
     color: #ffab0f;
     background: #2c2c2c;
-
 }
 
 .social-media {
@@ -231,7 +214,6 @@ h3,
 
 .social-media a {
     color: #2c2c2c;
-
 }
 
 .social-media i {
@@ -246,7 +228,6 @@ h3,
     border-radius: 50%;
     transition: .3s;
     box-sizing: border-box;
-
 }
 
 .social-media i:hover {
@@ -256,8 +237,6 @@ h3,
 
 .img-section {
     display: flex;
-
-
 }
 
 .img-section img {
@@ -270,7 +249,6 @@ h3,
     animation: SlideLeft 1s ease forwards, Float 3s ease-in-out infinite;
     animation-delay: .5s, 1s;
     opacity: 1;
-
 }
 
 
@@ -309,7 +287,6 @@ h3,
     padding-top: 10%;
     animation: FloatUp .8s ease-in forwards;
     animation-delay: .1s;
-
 }
 
 @keyframes FloatUp {
@@ -353,7 +330,6 @@ h3,
     border: none;
     border-radius: 15px;
     transition: .7s;
-
 }
 
 .wrap div:hover {
@@ -375,7 +351,6 @@ h3,
     display: inline-block;
     margin-top: 10px;
     font-size: 60px;
-
 }
 
 .html i {
@@ -392,7 +367,6 @@ h3,
 
 .bootstrap i {
     color: blueviolet;
-
 }
 
 .php i {
@@ -405,7 +379,6 @@ h3,
 
 .laravel i {
     color: #fb503b;
-
 }
 
 .svg {
@@ -429,8 +402,6 @@ h3,
     border: 2px solid #785113;
     border-radius: 20px;
     margin: 20px auto;
-
-
 }
 
 #percent::-webkit-progress-bar {
@@ -458,7 +429,6 @@ h3,
 .contact-list {
     display: inline-block;
     margin: 30px auto;
-
 }
 
 .contact-title {
@@ -476,8 +446,6 @@ a {
     display: inline-block;
     list-style: none;
     text-decoration: none;
-
-
 }
 
 .contact div ul a,i {
@@ -485,7 +453,6 @@ a {
     font-size: var(--p-l-font-size);
     color: var(--primary-color);
     margin: 10px 15px;
-
 }
 
 
@@ -499,8 +466,6 @@ a {
     color: ivory;
     background-color: #433b2d;
     text-align: center;
-
-
 }
 
 
@@ -514,18 +479,13 @@ a {
         display: block;
     }
 
-
-
     .logo {
         display: none;
     }
 
     .menu {
         display: none;
-
     }
-
-
 
     .navbar {
 
@@ -536,7 +496,6 @@ a {
         padding: 5px;
         text-align: center;
         background-color: var(--secondary-color);
-
     }
 
     .navbar .text-menu {
@@ -553,20 +512,16 @@ a {
         font-size: 20px;
         font-weight: 500;
         color: #ffab0f;
-
     }
 
     .icon-menu a:hover {
         color: #82642c;
-
     }
 
     .text-section {
-
         display: grid;
         width: 100%;
         text-align: center;
-
     }
 
     .text-section h2 {
@@ -575,7 +530,6 @@ a {
 
     .text-section h3 {
         margin-bottom: 20px;
-
     }
 
     .btn-box {
@@ -593,17 +547,14 @@ a {
 
     .social-media {
         position: unset;
-
         display: block;
         margin-top: 20px;
         margin-bottom: 50px;
         animation: Zoom 1s .2s forwards;
-
     }
 
     .social-media a {
         margin-left: 10px;
-
     }
 
     @keyframes Zoom {
@@ -659,8 +610,6 @@ a {
         background-color: #2e1e02;
         margin: 5px 5px;
         padding: 10px 0;
-
-
     }
 
     .wrap div:hover {
@@ -695,9 +644,8 @@ a {
         border: 1px solid #785113;
         border-radius: 10px;
         margin: 10px auto;
-
-
     }
+    
     .contact {
         margin: 10px auto;
         padding: 5px;
@@ -711,18 +659,10 @@ a {
     
     .contact div ul a,
     .contact div ul a i {
-        font-size: var(--p-font-size);
-        
-    
+        font-size: var(--p-font-size); 
     }
-    
-    
     
     .footer {
         font-size: 16px;
-    
-    
     }
-    
-    
 }
